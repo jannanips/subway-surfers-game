@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subway Suffer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud">
+        <div class="badge">Score <span id="score">0</span></div>
+        <div class="badge">Best <span id="best">0</span></div>
+      </div>
+
+      <canvas id="gameCanvas" width="420" height="700"></canvas>
+
+      <div id="overlay" class="overlay">
+        <div class="panel">
+          <h1 id="overlayTitle">Subway Suffer</h1>
+          <p id="overlayText">
+            Dodge trains, jump barriers, slide under signs, and grab coins.
+          </p>
+          <button id="startButton">Start Run</button>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="control-btn" data-action="left">◀</button>
+        <button class="control-btn" data-action="jump">▲</button>
+        <button class="control-btn" data-action="slide">▼</button>
+        <button class="control-btn" data-action="right">▶</button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
